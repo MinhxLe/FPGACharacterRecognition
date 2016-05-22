@@ -1,6 +1,8 @@
 include numpy as np
-
+import math
 def sigmoid(z):
+    return (1/(1+math.e**(-z)))
+    
     if z >= 4:
         return 1
     elif z > 0:
@@ -12,6 +14,9 @@ def sigmoid(z):
     else:
         return 0
 def sigmoid_prime(z):
+    return sigmoid(z)(1-sigmoid(z)) 
+    
+    
     if z >= 4:
         return 0
     elif z > 0:
