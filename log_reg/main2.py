@@ -1,7 +1,8 @@
 import numpy as np
 weights = np.load("weights.npy")
 from mnist import MNIST
-
+import math
+import struct
 DATA_PATH = './data'
 mndata = MNIST(DATA_PATH)
 mndata.load_training()
@@ -37,6 +38,9 @@ def sig_est(z):
 def lin(z):
     return weights[1:785].dot(z) + weights[0]
 
+def float_to_hex(f):
+    return hex(struct.unpack('<I', struct.pack('<f', f))[0])
+
 
 def main():
     tot = 0 
@@ -47,7 +51,13 @@ def main():
             tot+=1
     print(tot/len(train_in))
 
+    for x in weights:
+        print (x)
 
+    print ("\n\n\n")
+
+    for x in weights:
+        print(float_to_hex(x))
 
 if __name__ == "__main__":
 	main()
