@@ -2,6 +2,9 @@ import numpy as np
 weights = np.load("weights.npy")
 from mnist import MNIST
 
+weights = weights.astype(np.float32)
+np.save("weights.npy", weights)
+
 DATA_PATH = './data'
 mndata = MNIST(DATA_PATH)
 mndata.load_training()
