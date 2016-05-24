@@ -61,8 +61,11 @@ def main():
 
     print ("\n\n\n")
 
-    for x in weights:
-        print(float_to_hex(x))
+    for i in range(0,784):
+        print "mem[",
+	print i,
+	print "] <= ",
+	print float_to_hex(weights[i])
 
 if __name__ == "__main__":
 	main()
