@@ -52,7 +52,7 @@ def pic_to_blockram(x):
 	print "mem[",
 	print i,
 	print "] <= 8'd",
-	print float_to_hex(x[i]),
+	print str(float_to_hex(x[i]))[2:],
 	print ";"
 
 def main():
@@ -73,7 +73,7 @@ def main():
         print "mem[",
 	print i,
 	print "] <= 32'h", 
-	print float_to_hex(weights[i]),
+	print str(float_to_hex(weights[i]))[2:],
 	print ";"
 
 if __name__ == "__main__":
