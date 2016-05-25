@@ -46,6 +46,14 @@ def lin(z):
 def float_to_hex(f):
     return hex(struct.unpack('<I', struct.pack('<f', f))[0])
 
+#input: 784 element array i.e. main2.test_in[0]
+def pic_to_blockram(x):
+    for i in range(0, 784):
+	print "mem[",
+	print i,
+	print "] <= 8'd",
+	print float_to_hex(x[i]),
+	print ";"
 
 def main():
     tot = 0 
@@ -61,11 +69,12 @@ def main():
 
     print ("\n\n\n")
 
-    for i in range(0,784):
+    for i in range(0,785):
         print "mem[",
 	print i,
-	print "] <= ",
-	print float_to_hex(weights[i])
+	print "] <= 32'h", 
+	print float_to_hex(weights[i]),
+	print ";"
 
 if __name__ == "__main__":
 	main()
