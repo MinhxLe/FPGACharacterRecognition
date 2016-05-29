@@ -6,7 +6,7 @@ class LogisticRegression(object):
 
     # initialize
 
-    def __init__(self, X, Y, alpha=0.0005, lam=0.1, printIter=True):
+    def __init__(self, X, Y, number, alpha=0.0005, lam=0.1, printIter=True):
 
         x = numpy.array(X)
         m, n = x.shape
@@ -20,7 +20,7 @@ class LogisticRegression(object):
         const = numpy.array([1] * m).reshape(m, 1)
         self.X = numpy.append(const, x, axis=1)
 
-        self.Y = numpy.array(Y)
+        self.Y = numpy.array(Y)[:,number]
         self.alpha = alpha
         self.lam = lam
         self.theta = numpy.array([0.0] * (n + 1))
