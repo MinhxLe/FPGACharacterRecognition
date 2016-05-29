@@ -1,0 +1,4 @@
+verilog work "uchar2float.v"
+verilog work "ipcore_dir/float_mult.v"
+verilog work "ipcore_dir/float_add.v"
+verilog work "char_reg.v"

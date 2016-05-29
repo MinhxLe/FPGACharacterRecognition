@@ -1,0 +1,10 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB_isim_beh.exe -prj /home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB_beh.prj work.pic_ram_TB work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram.v" into library work
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v" into library work
+ERROR:HDLCompiler:69 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v" Line 50: <i> is not declared.
+ERROR:HDLCompiler:598 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v" Line 25: Module <pic_ram_TB> ignored due to previous errors.
+Verilog file /home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v ignored due to errors

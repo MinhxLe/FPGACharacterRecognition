@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="char_reg_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/char_reg_TB/uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/multState" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">multState[9:0]</obj_property>
+      <obj_property name="ObjectShortName">multState[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/multA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">multA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">multA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/multB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">multB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">multB[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/multNd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">multNd</obj_property>
+      <obj_property name="ObjectShortName">multNd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/multResult" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">multResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">multResult[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/multReady" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">multReady</obj_property>
+      <obj_property name="ObjectShortName">multReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/addA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/addB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addB[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/addReady" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addReady</obj_property>
+      <obj_property name="ObjectShortName">addReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/addNd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addNd</obj_property>
+      <obj_property name="ObjectShortName">addNd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/addResult" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addResult[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/addDone" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addDone</obj_property>
+      <obj_property name="ObjectShortName">addDone</obj_property>
+   </wvobject>
+</wave_config>

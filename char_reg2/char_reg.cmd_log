@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.xst" -ofn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.syr" 
+xst -intstyle ise -ifn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.xst" -ofn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 char_reg.ngc char_reg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o char_reg_map.ncd char_reg.ngd char_reg.pcf 
+xst -intstyle ise -ifn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.xst" -ofn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.syr" 
+xst -intstyle ise -ifn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.xst" -ofn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.syr" 
+xst -intstyle ise -ifn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.xst" -ofn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.syr" 
+xst -intstyle ise -ifn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.xst" -ofn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.syr" 
+xst -intstyle ise -ifn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.xst" -ofn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.syr" 
+xst -intstyle ise -ifn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.xst" -ofn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.syr" 
+xst -intstyle ise -ifn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.xst" -ofn "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 char_reg.ngc char_reg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o char_reg_map.ncd char_reg.ngd char_reg.pcf 

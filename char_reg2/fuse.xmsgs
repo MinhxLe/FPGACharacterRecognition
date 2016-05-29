@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v" Line 50: &lt;<arg fmt="%s" index="1">i</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v" Line 25: Module &lt;<arg fmt="%s" index="1">pic_ram_TB</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+
