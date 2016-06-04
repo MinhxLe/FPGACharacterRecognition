@@ -11,10 +11,10 @@
 <msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Verilog simulation file type &apos;Behavioral&apos; is not valid for this core. Overriding with simulation file type &apos;Structural&apos;.</arg>
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;float_add&apos; already exists in the project. Output products for this core may be overwritten.</arg>
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Verilog simulation file type &apos;Behavioral&apos; is not valid for this core. Overriding with simulation file type &apos;Structural&apos;.</arg>
 </msg>
 
-<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;float_add&apos;...</arg>
+<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;float_comp&apos;...</arg>
 </msg>
 
 <msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Verilog simulation file type &apos;Behavioral&apos; is not valid for this core. Overriding with simulation file type &apos;Structural&apos;.</arg>

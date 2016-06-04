@@ -1,10 +1,65 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB_isim_beh.exe -prj /home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB_beh.prj work.pic_ram_TB work.glbl 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg_TB_isim_beh.exe -prj /home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg_TB_beh.prj work.char_reg_TB work.glbl 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg2/ipcore_dir/float_mult.v" into library work
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg2/ipcore_dir/float_add.v" into library work
+WARNING:HDLCompiler:687 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/ipcore_dir/float_add.v" Line 10507: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg2/weights_ram.v" into library work
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg2/uchar2float.v" into library work
 Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram.v" into library work
-Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v" into library work
-ERROR:HDLCompiler:69 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v" Line 50: <i> is not declared.
-ERROR:HDLCompiler:598 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v" Line 25: Module <pic_ram_TB> ignored due to previous errors.
-Verilog file /home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v ignored due to errors
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" into library work
+WARNING:HDLCompiler:1818 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 169: Invalid size of integer constant literal
+WARNING:HDLCompiler:1818 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 215: Invalid size of integer constant literal
+WARNING:HDLCompiler:1818 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 216: Invalid size of integer constant literal
+WARNING:HDLCompiler:1818 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 226: Invalid size of integer constant literal
+WARNING:HDLCompiler:1818 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 227: Invalid size of integer constant literal
+WARNING:HDLCompiler:1818 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 236: Invalid size of integer constant literal
+WARNING:HDLCompiler:1818 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 237: Invalid size of integer constant literal
+WARNING:HDLCompiler:1818 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 301: Invalid size of integer constant literal
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg_TB.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+WARNING:HDLCompiler:189 - "/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 69: Size mismatch in connection of port <D>. Formal port size is 8-bit while actual signal size is 10-bit.
+Completed static elaboration
+Fuse Memory Usage: 104796 KB
+Fuse CPU Usage: 1420 ms
+Compiling module pic_ram
+Compiling module weight_ram
+Compiling module uchar2float
+Compiling module VCC
+Compiling module GND
+Compiling module FD
+Compiling module FDE
+Compiling module XORCY
+Compiling module MUXCY
+Compiling module DSP48A1(A0REG=1,B0REG=1,CARRYINR...
+Compiling module DSP48A1(A0REG=1,B0REG=1,CARRYINR...
+Compiling module DSP48A1(CARRYINREG=0,CARRYOUTREG...
+Compiling module LUT6(INIT=64'b01)
+Compiling module DSP48A1(A1REG=0,B1REG=0,CARRYINR...
+Compiling module FDRE
+Compiling module FDSE
+Compiling module LUT3(INIT=8'b11101010)
+Compiling module LUT2(INIT=4'b1110)
+Compiling module LUT5(INIT=32'b01)
+Compiling module LUT4(INIT=16'b1010101010101001)
+Compiling module LUT1(INIT=2'b10)
+Compiling module INV
+Compiling module SRLC16E
+Compiling module float_mult
+Compiling module MUXF8
+Compiling module MUXF7
+Compiling module float_add
+Compiling module char_reg
+Compiling module char_reg_TB
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 15 sub-compilation(s) to finish...
+Compiled 115 Verilog Units
+Built simulation executable /home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg_TB_isim_beh.exe
+Fuse Memory Usage: 674196 KB
+Fuse CPU Usage: 2480 ms
+GCC CPU Usage: 24570 ms

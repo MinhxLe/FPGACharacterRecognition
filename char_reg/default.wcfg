@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/minh/workspace/python_workspace/char_reg/char_reg/char_regTB_isim_beh1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="char_regTB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/char_regTB/uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_regTB/uut/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_regTB/uut/weightFloat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">weightFloat[31:0]</obj_property>
+      <obj_property name="ObjectShortName">weightFloat[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_regTB/uut/picFloat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">picFloat[31:0]</obj_property>
+      <obj_property name="ObjectShortName">picFloat[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_regTB/uut/multA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">multA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">multA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_regTB/uut/multB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">multB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">multB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_regTB/uut/multResult" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">multResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">multResult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_regTB/uut/opMultNd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">opMultNd</obj_property>
+      <obj_property name="ObjectShortName">opMultNd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_regTB/uut/multReady" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">multReady</obj_property>
+      <obj_property name="ObjectShortName">multReady</obj_property>
+   </wvobject>
+</wave_config>

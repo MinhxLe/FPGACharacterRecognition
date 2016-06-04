@@ -1,2 +1,8 @@
+verilog isim_temp "ipcore_dir/float_mult.v"
+verilog isim_temp "ipcore_dir/float_add.v"
+verilog isim_temp "weights_ram.v"
+verilog isim_temp "uchar2float.v"
+verilog isim_temp "pic_ram.v"
+verilog isim_temp "char_reg.v"
 verilog isim_temp "char_reg_TB.v"
 verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

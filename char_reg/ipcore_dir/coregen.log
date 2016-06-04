@@ -1,0 +1,71 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+WARNING:sim - A core named 'float_mult' already exists in the project. Output
+   products for this core may be overwritten.
+Resolving generics for 'float_mult'...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+WARNING:sim - A core named 'float_mult' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'float_mult'...
+Delivering associated files for 'float_mult'...
+Generating implementation netlist for 'float_mult'...
+INFO:sim - Pre-processing HDL files for 'float_mult'...
+Running synthesis for 'float_mult'
+Running ngcbuild...
+Writing VEO instantiation template for 'float_mult'...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Writing Verilog structural simulation model for 'float_mult'...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Delivered 3 files into directory
+/home/minh/workspace/python_workspace/char_reg/char_reg/ipcore_dir/tmp/_cg/float
+_mult
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'float_mult'...
+Generating metadata file...
+Generating ISE project...
+XCO file found: float_mult.xco
+XMDF file found: float_mult_xmdf.tcl
+Adding
+/home/minh/workspace/python_workspace/char_reg/char_reg/ipcore_dir/tmp/_cg/float
+_mult.asy -view all -origin_type imported
+Adding
+/home/minh/workspace/python_workspace/char_reg/char_reg/ipcore_dir/tmp/_cg/float
+_mult.ngc -view all -origin_type created
+Checking file
+"/home/minh/workspace/python_workspace/char_reg/char_reg/ipcore_dir/tmp/_cg/floa
+t_mult.ngc" for project device match ...
+File
+"/home/minh/workspace/python_workspace/char_reg/char_reg/ipcore_dir/tmp/_cg/floa
+t_mult.ngc" device information matches project device.
+Adding
+/home/minh/workspace/python_workspace/char_reg/char_reg/ipcore_dir/tmp/_cg/float
+_mult.sym -view all -origin_type imported
+Adding
+/home/minh/workspace/python_workspace/char_reg/char_reg/ipcore_dir/tmp/_cg/float
+_mult.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "/home/minh/workspace/python_workspace/char_reg/char_reg/ipcore_dir/tmp/_cg/f
+   loat_mult.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/minh/workspace/python_workspace/char_reg/char_reg/ipcore_dir/tmp/_cg/float
+_mult.veo -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/float_mult"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'float_mult'.

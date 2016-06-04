@@ -1,0 +1,28 @@
+Command line:
+   ramPicRO_isim_beh.exe
+     -simmode  gui
+     -simrunnum  2
+     -socket  38605
+
+Wed May 25 13:18:50 2016
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 195.949 Meg
+
+ Total Signals          : 16
+ Total Nets             : 34
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 6395
+
+ Total Simulation Time: 0.01 sec
+
+ Current Memory Usage: 271.45 Meg
+
+Wed May 25 13:18:54 2016
+

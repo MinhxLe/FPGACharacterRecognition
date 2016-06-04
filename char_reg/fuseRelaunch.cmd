@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/minh/workspace/python_workspace/char_reg/char_reg/char_regTB_isim_beh.exe" -prj "/home/minh/workspace/python_workspace/char_reg/char_reg/char_regTB_beh.prj" "work.char_regTB" "work.glbl" 

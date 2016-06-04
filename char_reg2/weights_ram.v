@@ -28,8 +28,6 @@ module weight_ram(
 	input rst;
 	input [9:0] addr;
 	output reg [31:0] data_out;
-	
-	reg [7:0] pic [0:783];
 	reg cnt;
 	
 	reg [31:0] weights [0:784];
@@ -38,7 +36,6 @@ module weight_ram(
 		if (rst) begin
 			//weights
 		  //addr <= 10'd0;
-		  data_out <= pic[0];
         weights[ 0 ] <= 32'h 38755540 ;
         weights[ 1 ] <= 32'h 0 ;
         weights[ 2 ] <= 32'h 0 ;
@@ -824,11 +821,11 @@ module weight_ram(
         weights[ 782 ] <= 32'h 0 ;
         weights[ 783 ] <= 32'h 0 ;
         weights[ 784 ] <= 32'h 0 ;
+		  data_out <= weights[addr];
+
 		end
 		else begin
-			for (cnt = 10'd0; cnt < 10'd783; cnt = cnt + 1'd1) begin
-				weights[cnt] <= weights[cnt];
-			end
+
 			if (addr <= 10'd784)
 				data_out <= weights[addr];
 			else

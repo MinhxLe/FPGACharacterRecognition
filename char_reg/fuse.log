@@ -1,0 +1,52 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/minh/workspace/python_workspace/char_reg/char_reg/char_regTB_isim_beh.exe" -prj "/home/minh/workspace/python_workspace/char_reg/char_reg/char_regTB_beh.prj" "work.char_regTB" "work.glbl" 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg/ipcore_dir/float_mult.v" into library work
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg/uchar2float.v" into library work
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg/ramWeightsRO.v" into library work
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg/ramPicRO.v" into library work
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg/char_reg.v" into library work
+Analyzing Verilog file "/home/minh/workspace/python_workspace/char_reg/char_reg/char_regTB.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+WARNING:HDLCompiler:329 - "/home/minh/workspace/python_workspace/char_reg/char_reg/char_reg.v" Line 105: Target <multResult> of concurrent assignment or output port connection should be a net type.
+Completed static elaboration
+Fuse Memory Usage: 100056 KB
+Fuse CPU Usage: 1200 ms
+Compiling module ramPicRO
+Compiling module ramWeightsRO
+Compiling module uchar2float
+Compiling module VCC
+Compiling module GND
+Compiling module FD
+Compiling module FDE
+Compiling module XORCY
+Compiling module MUXCY
+Compiling module DSP48A1(A0REG=1,B0REG=1,CARRYINR...
+Compiling module DSP48A1(A0REG=1,B0REG=1,CARRYINR...
+Compiling module DSP48A1(CARRYINREG=0,CARRYOUTREG...
+Compiling module LUT6(INIT=64'b01)
+Compiling module DSP48A1(A1REG=0,B1REG=0,CARRYINR...
+Compiling module FDRE
+Compiling module FDSE
+Compiling module LUT3(INIT=8'b11101010)
+Compiling module LUT2(INIT=4'b1110)
+Compiling module LUT5(INIT=32'b01)
+Compiling module LUT4(INIT=16'b1010101010101001)
+Compiling module LUT1(INIT=2'b10)
+Compiling module INV
+Compiling module SRLC16E
+Compiling module float_mult
+Compiling module char_reg
+Compiling module char_regTB
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 61 Verilog Units
+Built simulation executable /home/minh/workspace/python_workspace/char_reg/char_reg/char_regTB_isim_beh.exe
+Fuse Memory Usage: 670444 KB
+Fuse CPU Usage: 1540 ms
+GCC CPU Usage: 100 ms

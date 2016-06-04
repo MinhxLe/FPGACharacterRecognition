@@ -45,11 +45,12 @@ module pic_ram_TB;
 		clk = 0;
 		rst = 1;
 		i = 0;
-		#1 
+		#2
 		rst = 0;
+		#1
 		addr = 0;
 		for (i = 0; i <784; i = i+1) begin
-			#1 addr = addr + 1;
+			#2 addr = addr + 1;
 		end
 
 		// Wait 100 ns for global reset to finish
@@ -58,7 +59,7 @@ module pic_ram_TB;
 
 	end
    always @ (*) begin
-		clk <= ~clk;
+		#1 clk <= ~clk;
 	end
 endmodule
 
