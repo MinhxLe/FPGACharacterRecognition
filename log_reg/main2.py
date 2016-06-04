@@ -161,11 +161,31 @@ def verify():
         print test_out[i]
 
 def main():
+    #generating some pictures pic ans / test index
+    pic_coe(test_in[1], "picture/pic_1_1.coe")
+    pic_coe(test_in[2], "picture/pic_0_2.coe")
+    pic_coe(test_in[3], "picture/pic_1_3.coe")
+    pic_coe(test_in[4], "picture/pic_0_4.coe")
+    pic_coe(test_in[7], "picture/pic_3_7.coe")
+    pic_coe(test_in[11], "picture/pic_3_11.coe")
+    pic_coe(test_in[14], "picture/pic_2_14.coe")
+    pic_coe(test_in[16], "picture/pic_2_16.coe")
+	#combined pictures
+    pic_coe(combine_pic(test_in[1], test_in[2]), "picture/pic_0-1_1-2.coe")
+    pic_coe(combine_pic(test_in[2], test_in[14]), "picture/pic_0-2_2-14.coe")
+    pic_coe(combine_pic(test_in[2], test_in[7]), "picture/pic_0-3_2-7.coe")
+    pic_coe(combine_pic(test_in[1], test_in[14]), "picture/pic_1-2_1-14.coe")
+    pic_coe(combine_pic(test_in[1], test_in[7]), "picture/pic_1-3_1-7.coe")
+    pic_coe(combine_pic(test_in[14], test_in[11]), "picture/pic_2-3_14-11.coe")
+
+
+
+
     #generating weights coe
-    weights_coe(weights0 , "weights0.coe");
-    weights_coe(weights1 , "weights1.coe");
-    weights_coe(weights2 , "weights2.coe");
-    weights_coe(weights3 , "weights3:w.coe");
+    #weights_coe(weights0 , "weights0.coe");
+    #weights_coe(weights1 , "weights1.coe");
+    #weights_coe(weights2 , "weights2.coe");
+    #weights_coe(weights3 , "weights3:w.coe");
     #i = 1
     #print test_out[i]
     #pic_coe(test_in[i], "pic" + str(i) + ".coe")
