@@ -80,6 +80,7 @@ def lin(z, weightset):
     	return weights2[0:784].dot(z) + weights2[784]
     if(weightset == 3):
     	return weights3[0:784].dot(z) + weights3[784]
+
 def float_to_hex(f):
     return hex(struct.unpack('<I', struct.pack('<f', f))[0])
 
@@ -108,6 +109,7 @@ def print_weights(w):
        print ";"
 
 def main():
+   """
    tot = 0 
    for i in range(0, len(test_in)):#looks at all test cases
        act = (test_out[i])#actual is the vector ouptut
@@ -123,7 +125,11 @@ def main():
    print_weights(1)
    print_weights(2)
    print_weights(3)
-
+   """
+   print lin(test_in[1], 0)
+   print lin(test_in[1], 1)
+   print lin(test_in[1], 2)
+   print lin(test_in[1], 3)
 if __name__ == "__main__":
 	main()
 	
