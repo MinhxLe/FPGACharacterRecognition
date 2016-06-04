@@ -158,12 +158,14 @@ def verify():
         print test_out[i]
 
 def main():
+    #generating ambiguous case
+    """
     ambiguous = combine_pic(test_in[1], test_in[2]) #0 1
     ambiguous = combine_pic(test_in[7], ambiguous) #0 1 3
     ambiguous = combine_pic(test_in[14], ambiguous) #0 1 2 3
     print str(lin(ambiguous, 0)) + " " +  str(lin(ambiguous, 1)) + " " + str(lin(ambiguous, 2)) + " " + str(lin(ambiguous, 3))
     pic_coe(ambiguous, "picture/ambiguous.coe") 
-    
+    """
     #generating some pictures pic ans / test index
     """
     pic_coe(test_in[1], "picture/pic_1_1.coe")
@@ -182,42 +184,43 @@ def main():
     pic_coe(combine_pic(test_in[1], test_in[7]), "picture/pic_1-3_1-7.coe")
     pic_coe(combine_pic(test_in[14], test_in[11]), "picture/pic_2-3_14-11.coe")
     """
-
-
-
     #generating weights coe
-    #weights_coe(weights0 , "weights0.coe");
-    #weights_coe(weights1 , "weights1.coe");
-    #weights_coe(weights2 , "weights2.coe");
-    #weights_coe(weights3 , "weights3:w.coe");
-    #i = 1
-    #print test_out[i]
-    #pic_coe(test_in[i], "pic" + str(i) + ".coe")
-    #show_pic(test_in[i])
     """
+    weights_coe(weights0 , "weights0.coe");
+    weights_coe(weights1 , "weights1.coe");
+    weights_coe(weights2 , "weights2.coe");
+    weights_coe(weights3 , "weights3:w.coe");
+    i = 1
+    print test_out[i]
+    pic_coe(test_in[i], "pic" + str(i) + ".coe")
+    show_pic(test_in[i])
+       #generating a combined pic
     j = 13
     k = 14
     new_img = combine_pic(test_in[j], test_in[k])
     pic_coe(new_img, "pic" + str(j) + str(k) +".coe")
     show_pic(new_img)
     """
+    #testing weights
+    """
     #show_pic(3)
     #pic_coe(test_in[1])
-   # tot = 0 
-   # for i in range(0, len(test_in)):#looks at all test cases
-       # act = (test_out[i])#actual is the vector ouptut
-       # fail = []#this is what I estimate with my weights
-       # fail.append(sig_est(lin(test_in[i],0)))
-       # fail.append(sig_est(lin(test_in[i],1)))
-       # fail.append(sig_est(lin(test_in[i],2)))
-       # fail.append(sig_est(lin(test_in[i],3)))
-       # if act != fail:
-           # tot+=1
-   # print tot/len(train_in)
-   # print_weights(0)
-   # print_weights(1)
-   # print_weights(2)
-   # print_weights(3)
+   tot = 0 
+   for i in range(0, len(test_in)):#looks at all test cases
+       act = (test_out[i])#actual is the vector ouptut
+       fail = []#this is what I estimate with my weights
+       fail.append(sig_est(lin(test_in[i],0)))
+       fail.append(sig_est(lin(test_in[i],1)))
+       fail.append(sig_est(lin(test_in[i],2)))
+       fail.append(sig_est(lin(test_in[i],3)))
+       if act != fail:
+           tot+=1
+   print tot/len(train_in)
+   print_weights(0)
+   print_weights(1)
+   print_weights(2)
+   print_weights(3)
+   """
 
 if __name__ == "__main__":
 	main()
