@@ -89,10 +89,7 @@ def float_to_hex(f):
 def pic_to_blockram(x):
     for i in range(0, 784):
         print "10'd" + str(i) + ": pic <= 10'd" + str(x[i]) + ";"
-        # print i,
-        # print ": pic <= 10'd",
-        # print x[i],
-        # print ";"
+
 def print_weights(w):
    for i in range(0,785):
        print "10'd0" + str(i) + ": 32'h",
@@ -161,7 +158,14 @@ def verify():
         print test_out[i]
 
 def main():
+    ambiguous = combine_pic(test_in[1], test_in[2]) #0 1
+    ambiguous = combine_pic(test_in[7], ambiguous) #0 1 3
+    ambiguous = combine_pic(test_in[14], ambiguous) #0 1 2 3
+    print str(lin(ambiguous, 0)) + " " +  str(lin(ambiguous, 1)) + " " + str(lin(ambiguous, 2)) + " " + str(lin(ambiguous, 3))
+    pic_coe(ambiguous, "picture/ambiguous.coe") 
+    
     #generating some pictures pic ans / test index
+    """
     pic_coe(test_in[1], "picture/pic_1_1.coe")
     pic_coe(test_in[2], "picture/pic_0_2.coe")
     pic_coe(test_in[3], "picture/pic_1_3.coe")
@@ -177,7 +181,7 @@ def main():
     pic_coe(combine_pic(test_in[1], test_in[14]), "picture/pic_1-2_1-14.coe")
     pic_coe(combine_pic(test_in[1], test_in[7]), "picture/pic_1-3_1-7.coe")
     pic_coe(combine_pic(test_in[14], test_in[11]), "picture/pic_2-3_14-11.coe")
-
+    """
 
 
 
