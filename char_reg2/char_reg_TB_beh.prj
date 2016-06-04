@@ -1,2 +1,8 @@
+verilog work "ipcore_dir/float_mult.v"
+verilog work "ipcore_dir/float_add.v"
+verilog work "weights_ram.v"
+verilog work "uchar2float.v"
+verilog work "pic_ram.v"
+verilog work "char_reg.v"
 verilog work "char_reg_TB.v"
 verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

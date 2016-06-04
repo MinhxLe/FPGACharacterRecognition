@@ -5,10 +5,37 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v" Line 50: &lt;<arg fmt="%s" index="1">i</arg>&gt; is not declared.
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/ipcore_dir/float_add.v" Line 10507: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v" Line 25: Module &lt;<arg fmt="%s" index="1">pic_ram_TB</arg>&gt; ignored due to previous errors.
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 169: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 215: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 216: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 226: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 227: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 236: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 237: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 301: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v" Line 69: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">D</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">10</arg>-bit.
 </msg>
 
 </messages>

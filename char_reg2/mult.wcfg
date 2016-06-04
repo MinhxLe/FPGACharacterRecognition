@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="14" />
+   <WVObjectSize size="23" />
    <wvobject fp_name="/char_reg_TB/uut/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -19,9 +19,34 @@
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/char_reg_TB/uut/multState" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">multState[9:0]</obj_property>
-      <obj_property name="ObjectShortName">multState[9:0]</obj_property>
+   <wvobject fp_name="/char_reg_TB/uut/pic_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pic_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">pic_addr[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/weights_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">weights_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">weights_addr[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/pic" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pic[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pic[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/picConverted" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">picConverted[31:0]</obj_property>
+      <obj_property name="ObjectShortName">picConverted[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/weights" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">weights[31:0]</obj_property>
+      <obj_property name="ObjectShortName">weights[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/mult_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mult_state[9:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_state[9:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/char_reg_TB/uut/multA" type="array" db_ref_id="1">
@@ -34,18 +59,35 @@
       <obj_property name="ObjectShortName">multB[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/char_reg_TB/uut/multNd" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">multNd</obj_property>
-      <obj_property name="ObjectShortName">multNd</obj_property>
-   </wvobject>
    <wvobject fp_name="/char_reg_TB/uut/multResult" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">multResult[31:0]</obj_property>
       <obj_property name="ObjectShortName">multResult[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/multNd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">multNd</obj_property>
+      <obj_property name="ObjectShortName">multNd</obj_property>
+   </wvobject>
    <wvobject fp_name="/char_reg_TB/uut/multReady" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">multReady</obj_property>
       <obj_property name="ObjectShortName">multReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/add_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">add_state[9:0]</obj_property>
+      <obj_property name="ObjectShortName">add_state[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/addNd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addNd</obj_property>
+      <obj_property name="ObjectShortName">addNd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/addReady" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addReady</obj_property>
+      <obj_property name="ObjectShortName">addReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/addReadyD" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addReadyD</obj_property>
+      <obj_property name="ObjectShortName">addReadyD</obj_property>
    </wvobject>
    <wvobject fp_name="/char_reg_TB/uut/addA" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">addA[31:0]</obj_property>
@@ -57,21 +99,22 @@
       <obj_property name="ObjectShortName">addB[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/char_reg_TB/uut/addReady" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">addReady</obj_property>
-      <obj_property name="ObjectShortName">addReady</obj_property>
-   </wvobject>
-   <wvobject fp_name="/char_reg_TB/uut/addNd" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">addNd</obj_property>
-      <obj_property name="ObjectShortName">addNd</obj_property>
-   </wvobject>
    <wvobject fp_name="/char_reg_TB/uut/addResult" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">addResult[31:0]</obj_property>
       <obj_property name="ObjectShortName">addResult[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/char_reg_TB/uut/addDone" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">addDone</obj_property>
-      <obj_property name="ObjectShortName">addDone</obj_property>
+   <wvobject fp_name="/char_reg_TB/uut/total_sum" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">total_sum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">total_sum[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/addStart" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addStart</obj_property>
+      <obj_property name="ObjectShortName">addStart</obj_property>
+   </wvobject>
+   <wvobject fp_name="/char_reg_TB/uut/weights_d" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">weights_d</obj_property>
+      <obj_property name="ObjectShortName">weights_d</obj_property>
    </wvobject>
 </wave_config>

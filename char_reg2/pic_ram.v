@@ -35,7 +35,6 @@ module pic_ram(
 	always @ (posedge clk) begin
 		if (rst) begin
 			//picture
-		  //addr <= 10'd0;
 		  data_out <= pic[0];
         pic[ 0 ] <= 8'd 0 ;
         pic[ 1 ] <= 8'd 0 ;
@@ -823,13 +822,10 @@ module pic_ram(
         pic[ 783 ] <= 8'd 0 ;
 		end
 		else begin
-			for (cnt = 10'd0; cnt < 10'd783; cnt = cnt + 1'd1) begin
-				pic[cnt] <= pic[cnt];
-			end
-			if (addr <= 10'd783)
-				data_out <= pic[addr];
-			else// invalid addr
-				data_out <= 8'd0;
+			//if (addr <= 10'd783)
+			data_out <= pic[addr];
+			//else// invalid addr
+		   //data_out <= 8'd0;
 		end
 	end
 endmodule

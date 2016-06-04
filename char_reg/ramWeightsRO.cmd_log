@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/152/Desktop/char_reg/ramWeightsRO.xst" -ofn "C:/Users/152/Desktop/char_reg/ramWeightsRO.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/char_reg/ramWeightsRO.xst" -ofn "C:/Users/152/Desktop/char_reg/ramWeightsRO.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/char_reg/ramWeightsRO.xst" -ofn "C:/Users/152/Desktop/char_reg/ramWeightsRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 ramWeightsRO.ngc ramWeightsRO.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ramWeightsRO_map.ncd ramWeightsRO.ngd ramWeightsRO.pcf 
+par -w -intstyle ise -ol high -mt off ramWeightsRO_map.ncd ramWeightsRO.ncd ramWeightsRO.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ramWeightsRO.twx ramWeightsRO.ncd -o ramWeightsRO.twr ramWeightsRO.pcf 

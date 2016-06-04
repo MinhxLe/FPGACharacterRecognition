@@ -8,7 +8,16 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram_TB.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/minh/workspace/python_workspace/char_reg/char_reg2/char_reg.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/minh/workspace/python_workspace/char_reg/char_reg2/pic_ram.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/minh/workspace/python_workspace/char_reg/char_reg2/uchar2float.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/minh/workspace/python_workspace/char_reg/char_reg2/weights_ram.v&quot; into library work</arg>
 </msg>
 
 </messages>

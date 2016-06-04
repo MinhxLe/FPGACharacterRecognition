@@ -45,7 +45,7 @@ module char_reg_TB;
 		rst = 1;
 		#2
 		rst = 0;
-		#20000 $finish;
+		#22000 $finish;
 		// Add stimulus here
 
 	end

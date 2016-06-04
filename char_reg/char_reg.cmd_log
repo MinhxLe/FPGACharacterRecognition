@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/minh/workspace/python_workspace/char_reg/char_reg/char_reg.xst" -ofn "/home/minh/workspace/python_workspace/char_reg/char_reg/char_reg.syr" 
