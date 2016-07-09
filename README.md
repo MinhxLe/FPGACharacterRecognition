@@ -12,3 +12,4 @@ Logistic regression works by using gradient descent, an algorithm that minimizes
 
 Gradient descent will minimize the cost function by finding the partial derivative of the cost function with respect to every weight (theta) and adjusting each of them by some learning rate (alpha) multiplied by the gradient.
 
+![alt tag](http://2.bp.blogspot.com/-ZxJ87cWjPJ8/TtLtwqv0hCI/AAAAAAAAAV0/9FYqcxJ6dNY/s1600/gradient+descent+algorithm+OLS.png)
