@@ -13,3 +13,12 @@ Logistic regression works by using gradient descent, an algorithm that minimizes
 Gradient descent will minimize the cost function by finding the partial derivative of the cost function with respect to every weight (theta) and adjusting each of them by some learning rate (alpha) multiplied by the gradient.
 
 ![alt tag](http://2.bp.blogspot.com/-ZxJ87cWjPJ8/TtLtwqv0hCI/AAAAAAAAAV0/9FYqcxJ6dNY/s1600/gradient+descent+algorithm+OLS.png)
+
+The result of minimizing the cost function would be a set of 785 weights (one for each 28 x 28 pixel and one bias) to be used in our hypothesis function. We calculated that we would be able to train our model to recognize the most number of digits with the highest accuracy if we simply trained a logistic regression for several digits and stored these four sets of weights on the FPGA. 
+
+>Since space and computation power were restricted for this project, we had to make some modifications to how we performed a prediction based on our weights.
+
+#Hardware
+
+We worked with a Spartan 6 FPGA. To ease up on space, we only used single precision floating points (we found that half precision floating points sacrified more accuracy than we wanted). To ease up on computation, we decided to modify our calculation of the prediction to not include heavy computations including division and the sigmoid function. This all came down to our use of a modified sigmoid function that could still make a prediction without too much loss of accuracy. 
+
