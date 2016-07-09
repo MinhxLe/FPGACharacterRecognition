@@ -22,7 +22,7 @@ The result of minimizing the cost function would be a set of 785 weights (one fo
 
 We worked with a Spartan 6 FPGA. To ease up on space, we only used single precision floating points (we found that half precision floating points sacrified more accuracy than we wanted). To ease up on computation, we decided to modify our calculation of the prediction to not include heavy computations including division and the sigmoid function. This all came down to our use of a modified sigmoid function that could still make a prediction without too much loss of accuracy. 
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![alt text](https://github.com/scottyshi/FPGA_char_reg/blob/master/modifiedsigmoid.png)
 
 After we run any number through all four sets of our weights on the FPGA, each prediction will spit out a floating point output which will then be fed into this modified sigmoid function. This results in a vector of '1's and '0's, each corresponding to whether or not the digit looks like a '0', '1', '2', or '3'. 
 
@@ -30,4 +30,4 @@ After we run any number through all four sets of our weights on the FPGA, each p
 
 Here are the results of our FPGA calculated predictions vs the predictions we made on our computers:
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![alt text](https://github.com/scottyshi/FPGA_char_reg/blob/master/FPGAresults.png)
