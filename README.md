@@ -20,6 +20,8 @@ The result of minimizing the cost function would be a set of 785 weights (one fo
 
 #Hardware
 
+![alt text](https://github.com/scottyshi/FPGA_char_reg/blob/master/FPGAschematic.png)
+
 We worked with a Spartan 6 FPGA. To ease up on space, we only used single precision floating points (we found that half precision floating points sacrified more accuracy than we wanted). To ease up on computation, we decided to modify our calculation of the prediction to not include heavy computations including division and the sigmoid function. This all came down to our use of a modified sigmoid function that could still make a prediction without too much loss of accuracy. 
 
 ![alt text](https://github.com/scottyshi/FPGA_char_reg/blob/master/modifiedsigmoid.png)
