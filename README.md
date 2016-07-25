@@ -1,10 +1,10 @@
 # FPGA Character Recognition
 
-#High level goal
+## High level goal
 
 The objective of the design is to for our FPGA to be able to distinguish between handwritten digits. The input will be a 28 x 28 pixel image from the MNIST data set and our FPGA should be able output which digit it is.
 
-#Training
+## Training
 
 In order to recognize the digits, we will create logistic regression nodes that will output a binary answer of whether the inputted image is a number or not. Logistic regression is a popular model for linear binary classification. It assumes a linear relationship between the input vector(the 28x28 pixel image) and the output (whether the image is a certain digit or not). 
 
@@ -18,7 +18,7 @@ The result of minimizing the cost function would be a set of 785 weights (one fo
 
 >Since space and computation power were restricted for this project, we had to make some modifications to how we performed a prediction based on our weights.
 
-#Hardware
+## Hardware
 
 ![alt text](https://github.com/scottyshi/FPGA_char_reg/blob/master/FPGAschematic.png)
 
@@ -28,7 +28,7 @@ We worked with a Spartan 6 FPGA. To ease up on space, we only used single precis
 
 After we run any number through all four sets of our weights on the FPGA, each prediction will spit out a floating point output which will then be fed into this modified sigmoid function. This results in a vector of '1's and '0's, each corresponding to whether or not the digit looks like a '0', '1', '2', or '3'. 
 
-#Results 
+## Results 
 
 Here are the results of our FPGA calculated predictions vs the predictions we made on our computers:
 
